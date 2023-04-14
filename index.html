@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <header class="mb-3">
+        <div class="d-flex justify-content-center mt-3" >
+            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="green" class="bi bi-cart-check"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                <path
+                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+            </svg>
+            <h1 id="shopping">Shopping List</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-12">
+                <form action="#">
+                    <input  class="form-control rounded" onfocus="this.value=''" type="text" name="" id="form-input" placeholder="Enter Items">
+                </form>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">
+                <button type="button" class="btn btn-dark btn-lg">+ Add Item</button>
+            </div>
+        </div>
+        <ul class="row btn-row px-2">
+                <!-- <li class="d-flex justify-content-between fw-bold col-12 border mb-2 px-3 rounded">
+                    <p class="pt-2">Maggi cube</p>
+                    <button type="button" class="btn">
+                        <i class="fa-regular fa-xmark fa-lg text-danger"></i>
+                    </button>
+                </li> -->
+        </ul>
+        <div class="row">
+            <div class="col-12 d-flex">
+                <button id="clear" class="btn btn-outline-dark flex-fill">Clear</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
